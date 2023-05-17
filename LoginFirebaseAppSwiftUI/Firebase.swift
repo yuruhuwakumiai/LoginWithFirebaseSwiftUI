@@ -10,7 +10,8 @@ import FirebaseAuth
 
 
 class UserAuth: ObservableObject {
-    @Published var isSignedIn = false
+    @Published var isGoogleSignedIn = false
+    @Published var isMailSignedIn = false
     @Published var error: String?
     @Published var isLoading = false
 
@@ -31,7 +32,7 @@ class UserAuth: ObservableObject {
                 self.error = "エラー: \(error.localizedDescription)"
             } else {
                 print("User \(authResult?.user.uid ?? "") created")
-                self.isSignedIn = true
+                self.isMailSignedIn = true
             }
         }
     }
@@ -53,7 +54,7 @@ class UserAuth: ObservableObject {
                 self.error = "エラー: \(error.localizedDescription)"
             } else {
                 print("User \(authResult?.user.uid ?? "") signed in")
-                self.isSignedIn = true
+                self.isMailSignedIn = true
             }
         }
     }

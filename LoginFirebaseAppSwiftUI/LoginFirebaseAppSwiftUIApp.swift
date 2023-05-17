@@ -27,10 +27,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct LoginFirebaseAppSwiftUIApp: App {
     // 追加設定
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var userAuth = UserAuth() // GoogleLoginのためUserAuthを使用可能にする
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserScreen()
+                .environmentObject(userAuth)
         }
     }
 }

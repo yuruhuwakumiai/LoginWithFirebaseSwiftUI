@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0938CC732A15226A00CF7780 /* LoginFirebaseAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC722A15226A00CF7780 /* LoginFirebaseAppSwiftUIApp.swift */; };
-		0938CC752A15226A00CF7780 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC742A15226A00CF7780 /* ContentView.swift */; };
+		0938CC752A15226A00CF7780 /* UserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC742A15226A00CF7780 /* UserScreen.swift */; };
 		0938CC772A15226B00CF7780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0938CC762A15226B00CF7780 /* Assets.xcassets */; };
 		0938CC7A2A15226B00CF7780 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0938CC792A15226B00CF7780 /* Preview Assets.xcassets */; };
 		0938CC812A15227800CF7780 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC802A15227800CF7780 /* Firebase.swift */; };
 		0938CC832A15723900CF7780 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0938CC822A15723900CF7780 /* GoogleService-Info.plist */; };
-		0938CC852A1575DF00CF7780 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC842A1575DF00CF7780 /* HomeView.swift */; };
+		0938CC852A1575DF00CF7780 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC842A1575DF00CF7780 /* HomeScreen.swift */; };
+		0938CC8A2A157E9C00CF7780 /* GoogoleAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0938CC892A157E9C00CF7780 /* GoogoleAuthView.swift */; };
 		46464A1CE03DA3E304A88EDA /* Pods_LoginFirebaseAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2067780DAE690DDA9B259516 /* Pods_LoginFirebaseAppSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0938CC6F2A15226A00CF7780 /* LoginFirebaseAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebaseAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0938CC722A15226A00CF7780 /* LoginFirebaseAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseAppSwiftUIApp.swift; sourceTree = "<group>"; };
-		0938CC742A15226A00CF7780 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0938CC742A15226A00CF7780 /* UserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreen.swift; sourceTree = "<group>"; };
 		0938CC762A15226B00CF7780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0938CC792A15226B00CF7780 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0938CC802A15227800CF7780 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		0938CC822A15723900CF7780 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0938CC842A1575DF00CF7780 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0938CC842A1575DF00CF7780 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		0938CC862A15781900CF7780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0938CC892A157E9C00CF7780 /* GoogoleAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogoleAuthView.swift; sourceTree = "<group>"; };
 		2067780DAE690DDA9B259516 /* Pods_LoginFirebaseAppSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginFirebaseAppSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351FE7B1EA6177259AF92295 /* Pods-LoginFirebaseAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebaseAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LoginFirebaseAppSwiftUI/Pods-LoginFirebaseAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		C8747405FF63B20C98C82B6E /* Pods-LoginFirebaseAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebaseAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-LoginFirebaseAppSwiftUI/Pods-LoginFirebaseAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,9 +69,10 @@
 			children = (
 				0938CC862A15781900CF7780 /* Info.plist */,
 				0938CC722A15226A00CF7780 /* LoginFirebaseAppSwiftUIApp.swift */,
-				0938CC742A15226A00CF7780 /* ContentView.swift */,
+				0938CC742A15226A00CF7780 /* UserScreen.swift */,
 				0938CC802A15227800CF7780 /* Firebase.swift */,
-				0938CC842A1575DF00CF7780 /* HomeView.swift */,
+				0938CC842A1575DF00CF7780 /* HomeScreen.swift */,
+				0938CC892A157E9C00CF7780 /* GoogoleAuthView.swift */,
 				0938CC762A15226B00CF7780 /* Assets.xcassets */,
 				0938CC822A15723900CF7780 /* GoogleService-Info.plist */,
 				0938CC782A15226B00CF7780 /* Preview Content */,
@@ -217,9 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0938CC8A2A157E9C00CF7780 /* GoogoleAuthView.swift in Sources */,
 				0938CC812A15227800CF7780 /* Firebase.swift in Sources */,
-				0938CC852A1575DF00CF7780 /* HomeView.swift in Sources */,
-				0938CC752A15226A00CF7780 /* ContentView.swift in Sources */,
+				0938CC852A1575DF00CF7780 /* HomeScreen.swift in Sources */,
+				0938CC752A15226A00CF7780 /* UserScreen.swift in Sources */,
 				0938CC732A15226A00CF7780 /* LoginFirebaseAppSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
