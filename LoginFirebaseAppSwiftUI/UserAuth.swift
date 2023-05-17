@@ -34,6 +34,7 @@ class UserAuth: ObservableObject {
             } else {
                 print("User \(authResult?.user.uid ?? "") created")
                 self.isMailSignedIn = true
+                self.isShowingHomeView = true
             }
         }
     }
@@ -56,6 +57,7 @@ class UserAuth: ObservableObject {
             } else {
                 print("User \(authResult?.user.uid ?? "") signed in")
                 self.isMailSignedIn = true
+                self.isShowingHomeView = true // 画面遷移
             }
         }
     }

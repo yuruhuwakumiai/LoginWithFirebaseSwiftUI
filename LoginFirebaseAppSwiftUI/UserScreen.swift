@@ -17,9 +17,6 @@ struct UserScreen: View {
 
     var body: some View {
         GoogleAuthView()
-        if userAuth.isMailSignedIn {
-            HomeScreen()
-        } else {
             VStack {
                 TextField("Email", text: $email)
                     .padding()
@@ -77,7 +74,6 @@ struct UserScreen: View {
                 HomeScreen()
             }
             .padding()
-        }
     }
 }
 struct ContentView_Previews: PreviewProvider {
