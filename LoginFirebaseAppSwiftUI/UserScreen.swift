@@ -10,7 +10,7 @@ import FirebaseAuth
 import GoogleSignIn
 
 struct UserScreen: View {
-    @StateObject var userAuth = UserAuth()
+    @EnvironmentObject var userAuth: UserAuth
     @State private var email = ""
     @State private var password = ""
     @State private var isPasswordVisible = false
