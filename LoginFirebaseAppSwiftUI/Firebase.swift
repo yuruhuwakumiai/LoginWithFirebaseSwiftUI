@@ -8,6 +8,7 @@
 import SwiftUI
 import FirebaseAuth
 
+
 class UserAuth: ObservableObject {
     @Published var isSignedIn = false
     @Published var error: String?
