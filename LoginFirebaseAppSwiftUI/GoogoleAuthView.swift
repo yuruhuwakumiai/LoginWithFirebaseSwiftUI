@@ -62,6 +62,7 @@ struct GoogleAuthView: View {
                 return
             } else {
                 self.userAuth.isGoogleSignedIn = true
+                self.userAuth.isShowingHomeView = true
             }
         }
     }

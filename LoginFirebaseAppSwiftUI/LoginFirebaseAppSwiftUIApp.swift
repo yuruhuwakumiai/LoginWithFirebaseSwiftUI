@@ -9,12 +9,12 @@ import SwiftUI
 import FirebaseCore
 import GoogleSignIn
 
-// 追加設定
+// GoogleSignIn設定
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
     }
-
+// Firebase設定
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
@@ -27,7 +27,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct LoginFirebaseAppSwiftUIApp: App {
     // 追加設定
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject private var userAuth = UserAuth() // GoogleLoginのためUserAuthを使用可能にする
+    // GoogleLoginのためUserAuthを使用可能にする
+    @StateObject private var userAuth = UserAuth()
 
     var body: some Scene {
         WindowGroup {

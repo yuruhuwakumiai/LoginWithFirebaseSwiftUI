@@ -1,5 +1,5 @@
 //
-//  Firebase.swift
+//  UserAuth.swift
 //  LoginFirebaseAppSwiftUI
 //
 //  Created by 橋元雄太郎 on 2023/05/17.
@@ -14,6 +14,7 @@ class UserAuth: ObservableObject {
     @Published var isMailSignedIn = false
     @Published var error: String?
     @Published var isLoading = false
+    @Published var isShowingHomeView = false // 画面遷移
 
     func signUp(email: String, password: String) {
         guard isValidEmail(email) else {

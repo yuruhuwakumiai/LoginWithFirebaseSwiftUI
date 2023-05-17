@@ -17,7 +17,7 @@ struct UserScreen: View {
 
     var body: some View {
         GoogleAuthView()
-        if userAuth.isMailSignedIn || userAuth.isGoogleSignedIn {
+        if userAuth.isMailSignedIn {
             HomeScreen()
         } else {
             VStack {
@@ -72,6 +72,9 @@ struct UserScreen: View {
                     }
                     .padding(.top)
                 }
+            }
+            .sheet(isPresented: $userAuth.isShowingHomeView) {
+                HomeScreen()
             }
             .padding()
         }
